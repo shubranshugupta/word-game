@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Game</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=DynaPuff&family=Roboto+Mono:ital,wght@0,400;1,300;1,400&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header class="title-head">
+        <h1 class="title">WORD GAME</h1>
+    </header>
+    <div class="rules">
+        <h2>Game Rules</h2>
+        <ol>
+            <li>Only guess <strong>5 letter</strong> Words.</li>
+            <li>Guess the right word in <strong>6 attempts</strong>.</li>
+            <li>If you guess correct word then all box will be <strong><span style="color: rgb(0, 147, 0);">green</span></strong>.</li>
+            <li>If you guess correct letter in same position then box will be <strong><span style="color: rgb(0, 147, 0);">green</span></strong>.</li>
+            <li>If you guess correct letter in different position then box will be <strong><span style="color: goldenrod;">gold</span></strong>.</li>
+            <li>If box blink red then the word is <strong>invalid</strong>.</li>
+        </ol>
+    </div>
+    <div class="game">
+        <div class="spinner">
+            🌀
+        </div>
+        <div class="word-input">
+            <div class="input-letter" id="letter0"></div>
+            <div class="input-letter" id="letter1"></div>
+            <div class="input-letter" id="letter2"></div>
+            <div class="input-letter" id="letter3"></div>
+            <div class="input-letter" id="letter4"></div>
+            <div class="input-letter" id="letter5"></div>
+            <div class="input-letter" id="letter6"></div>
+            <div class="input-letter" id="letter7"></div>
+            <div class="input-letter" id="letter8"></div>
+            <div class="input-letter" id="letter9"></div>
+            <div class="input-letter" id="letter10"></div>
+            <div class="input-letter" id="letter11"></div>
+            <div class="input-letter" id="letter12"></div>
+            <div class="input-letter" id="letter13"></div>
+            <div class="input-letter" id="letter14"></div>
+            <div class="input-letter" id="letter15"></div>
+            <div class="input-letter" id="letter16"></div>
+            <div class="input-letter" id="letter17"></div>
+            <div class="input-letter" id="letter18"></div>
+            <div class="input-letter" id="letter19"></div>
+            <div class="input-letter" id="letter20"></div>
+            <div class="input-letter" id="letter21"></div>
+            <div class="input-letter" id="letter22"></div>
+            <div class="input-letter" id="letter23"></div>
+            <div class="input-letter" id="letter24"></div>
+            <div class="input-letter" id="letter25"></div>
+            <div class="input-letter" id="letter26"></div>
+            <div class="input-letter" id="letter27"></div>
+            <div class="input-letter" id="letter28"></div>
+            <div class="input-letter" id="letter29"></div>
+        </div>
+        <h3 class="correct-ans"></h3>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+
+</html>

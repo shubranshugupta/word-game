@@ -1,0 +1,149 @@
+body {
+    font-family: 'Roboto Mono', monospace;
+    margin: 0% 3% 0% 3%;
+}
+
+h1 {
+    font-size: 3em;
+    margin: 1% 0% 1% 0%;
+}
+
+h2 {
+    text-align: center;
+    margin: 0.5% 0% 0% 0%;
+}
+
+h3 {
+    margin: 0.5% 0% 0% 0%;
+}
+
+.title-head {
+    text-align: center;
+    border-bottom: 3px solid rgb(49, 51, 52);
+}
+
+.rules {
+    border-bottom: 3px solid rgb(49, 51, 52);
+}
+
+.game {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.spinner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    margin: 0.7%;
+    animation: spin 2s linear infinite;
+}
+
+.hide{
+    visibility: hidden;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.word-input {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    row-gap: 10px;
+    column-gap: 5px;
+    max-width: 300px;
+    width: 100%;
+    margin: 1%;
+}
+
+.input-letter {
+    border: 3px solid rgb(131, 131, 131);
+    height: 45px;
+    width: 45px;
+    text-transform: uppercase;
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+    color: rgb(51, 51, 51);
+}
+
+.wrong {
+    background-color: rgb(121, 129, 142);
+    color: rgb(239, 243, 255);
+}
+
+.right {
+    background-color: rgb(0, 118, 0);
+    color: rgb(239, 243, 255);
+}
+
+.close {
+    background-color: goldenrod;
+    color: rgb(239, 243, 255);
+}
+
+.invalid {
+    animation: flash 1s;
+}
+
+@keyframes flash {
+    5% {
+        border-color: crimson;
+    }
+
+    70% {
+        border-color: crimson;
+    }
+
+    100% {
+        border-color: rgb(131, 131, 131);
+    }
+}
+
+.winner {
+    animation: rainbow-colors 2s linear infinite;
+    animation-delay: calc(-2s * var(--char-percent));
+}
+
+
+@keyframes rainbow-colors {
+    0% {
+        color: hsl(0turn, 90%, 65%);
+    }
+
+    25% {
+        color: hsl(.25turn, 90%, 65%);
+    }
+
+    50% {
+        color: hsl(.5turn, 90%, 65%);
+    }
+
+    75% {
+        color: hsl(.75turn, 90%, 65%);
+    }
+
+    100% {
+        color: hsl(1turn, 90%, 65%);
+    }
+}
+
+@keyframes shake {
+    0% { transform: translateX(0); }
+    20% { transform: translateX(-10px) rotate(-10deg); }
+    40% { transform: translateX(10px) rotate(10deg); }
+    60% { transform: translateX(-10px) rotate(-10deg); }
+    80% { transform: translateX(10px) rotate(10deg); }
+    100% { transform: translateX(0) rotate(0); }
+  }
+  
+  .loss {
+    color: crimson;
+    animation: shake 0.5s ease;
+  }
