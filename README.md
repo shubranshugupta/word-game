@@ -14,8 +14,7 @@ This is a simple word guess game where the player has to guess a 5-letter word. 
 1. Randomly generated 5-letter word for each game
 2. Limited number of guesses (default: 6)
 3. Display of guessed letters and correct letters in the word
-5. Win/lose message at the end of the game
-
+4. Win/lose message at the end of the game
 
 ## Screenshots
 
@@ -23,7 +22,7 @@ This is a simple word guess game where the player has to guess a 5-letter word. 
 
 ## Installation
 
-1. Clone [this]() repository to your local machine.
+1. Clone [this](https://github.com/shubranshugupta/word-game.git) repository to your local machine.
 2. Open the index.html file in your web browser.
 
 ## Contributing
@@ -36,4 +35,4 @@ This project was created by `Shubhranshu Gupta`.
 
 ## License
 
-This project is licensed under the [MIT License]().
+This project is licensed under the [MIT License](LICENSE).
