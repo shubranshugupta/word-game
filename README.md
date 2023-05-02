@@ -35,4 +35,4 @@ This project was created by `Shubhranshu Gupta`.
 
 ## License
 
-This project is licensed under the [MIT License](LICENSE).
+This project is licensed under the [MIT License](https://github.com/shubranshugupta/word-game/blob/master/license).
